@@ -29,9 +29,19 @@ function userLog() {
     AdminBlock.id = "Projet-Admin";
     AdminBlock.innerHTML = `
     <i class="fa-regular fa-pen-to-square"></i>
-    <p>modifier</p>
+    <button class="modal-btn modal-trigger">modifier</button>
     `;
     ProjetAdmin.appendChild(AdminBlock);
+
+    //affichage de la modale
+    const modalContainer = document.querySelector(".modal-container");
+    const modalTriggers = document.querySelectorAll(".modal-trigger");
+    modalTriggers.forEach((trigger) =>
+      trigger.addEventListener("click", toggleModal)
+    );
+    function toggleModal() {
+      modalContainer.classList.toggle("active");
+    }
   }
 }
 
