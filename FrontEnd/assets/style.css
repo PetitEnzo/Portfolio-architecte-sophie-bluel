@@ -136,9 +136,31 @@ body {
 }
 header {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#loginHeader {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin: 50px 0;
 }
+
+#main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+#placementHeaderAdmin {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  margin: 0px 0px;
+}
+
 section {
   margin: 50px 0;
 }
@@ -163,9 +185,18 @@ h2 {
   font-weight: 700;
   font-size: 30px;
   color: #1d6154;
-  text-align: center;
   margin-bottom: 2em;
 }
+h4 {
+  display: flex;
+  font-family: "Syne";
+  font-weight: 700;
+  font-size: 30px;
+  color: #1d6154;
+  margin-bottom: 2em;
+  justify-content: center;
+}
+
 nav ul {
   display: flex;
   align-items: center;
@@ -268,7 +299,6 @@ footer nav ul {
   margin: 2em;
 }
 
-/*log in page   est la bonne méthode ou dois-je recrée un fichier css?*/
 #loginForm {
   display: grid;
   grid-template-columns: 1fr;
@@ -322,6 +352,39 @@ footer nav ul {
 }
 
 /*Css dynamique*/
+
+#Project {
+  margin-top: 9em;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+#edition {
+  height: 4em;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#edition p,
+i {
+  color: white;
+}
+
+#Project H2 {
+  margin-right: 2em;
+}
+
+#Projet-Admin {
+  display: flex;
+}
+
+#Projet-Admin i {
+  color: #1d6154;
+}
 
 .modal-image {
   width: 100%;
