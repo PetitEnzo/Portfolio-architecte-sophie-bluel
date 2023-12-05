@@ -2,13 +2,13 @@
 import { apiUrl, apiEnd } from "./api.js";
 import { userLog } from "./userLog.js";
 import { fetchAndDisplayProjects } from "./projects.js";
-import { setupFilterButtons } from "./filter.js";
+import { filterProjects } from "./filter.js";
 import { setupLogin } from "./login.js";
 
 // Initialisation de l'affichage des projets
 fetchAndDisplayProjects();
 // Initialisation des boutons de filtre
-setupFilterButtons();
+filterProjects();
 
 // Gestion du lien de connexion
 const loginLink = document.getElementById("loginLink");

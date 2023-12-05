@@ -105,9 +105,7 @@ nav,
 section {
   display: block;
 }
-body {
-  line-height: 1;
-}
+
 ol,
 ul {
   list-style: none;
@@ -129,6 +127,7 @@ table {
 }
 /** end reset css**/
 body {
+  line-height: 1;
   max-width: 1140px;
   margin: auto;
   font-family: "Work Sans";
@@ -358,7 +357,6 @@ footer nav ul {
 }
 
 .modal-container {
-  /* display: none;*/
   visibility: hidden;
   position: fixed;
   top: 0;
@@ -368,7 +366,6 @@ footer nav ul {
 }
 
 .modal-container.active {
-  /*display: block;*/
   visibility: visible;
 }
 

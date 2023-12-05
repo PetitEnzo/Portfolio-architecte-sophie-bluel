@@ -13,6 +13,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const closeModalButton = document.querySelector(".close-modal");
   closeModalButton.addEventListener("click", toggleModal);
-
-  const addPictureButton = document.querySelector(".AddPicture");
 });
