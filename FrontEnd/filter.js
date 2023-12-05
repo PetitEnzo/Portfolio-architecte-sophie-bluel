@@ -1,6 +1,6 @@
 // Fonction de filtre des projets
 export function filterProjects(category) {
-  const projects = document.querySelectorAll(".modal-div");
+  const projects = document.querySelectorAll(".gallery");
 
   projects.forEach((project) => {
     const projectCategory = project.getAttribute("data-category");
