@@ -5,13 +5,10 @@ import { fetchAndDisplayProjects } from "./projects.js";
 import { setupFilterButtons } from "./filter.js";
 import { setupLogin } from "./login.js";
 
-// Code principal exécuté lorsque le DOM est entièrement chargé
-document.addEventListener("DOMContentLoaded", function () {
-  // Initialisation de l'affichage des projets
-  fetchAndDisplayProjects();
-  // Initialisation des boutons de filtre
-  setupFilterButtons();
-});
+// Initialisation de l'affichage des projets
+fetchAndDisplayProjects();
+// Initialisation des boutons de filtre
+setupFilterButtons();
 
 // Gestion du lien de connexion
 const loginLink = document.getElementById("loginLink");
