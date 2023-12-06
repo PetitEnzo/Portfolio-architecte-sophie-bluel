@@ -14,6 +14,7 @@ export function fetchAndDisplayProjects() {
 
           nouvelElement.classList.add("gallery");
           nouvelElement.setAttribute("data-category", projet.category.name);
+          nouvelElement.setAttribute("id", `img-${projet.id}`);
           nouvelElement.innerHTML = `
               <img src="${projet.imageUrl}" alt="${projet.title}" class="modal-image">
               <h3>${projet.title}</h3>

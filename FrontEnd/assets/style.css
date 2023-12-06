@@ -403,6 +403,9 @@ footer nav ul {
   transition: opacity 0.4s ease-out;
 }
 
+.modal-ajout {
+}
+
 .modal-container.active .modal {
   opacity: 1;
   transition: opacity 0.4s 0.2s ease-out;
@@ -478,7 +481,7 @@ i {
   height: auto;
 }
 
-.imageModal {
+.imageModale {
   width: 78px;
   height: auto;
 }
@@ -487,6 +490,24 @@ i {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.LigneModal {
+  border: none;
+  color: #b3b3b3;
+  width: 420px;
+  height: 0px;
+  border: 1px solid #b3b3b3;
+}
+
+.fa-trash-can {
+  top: -102px;
+  left: 55px;
+  background-color: black;
+  border-radius: 10%;
+  padding: 4px;
+  position: relative;
+  cursor: pointer;
 }
 
 .gallery {
