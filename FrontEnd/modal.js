@@ -3,6 +3,18 @@ import { apiUrl, apiEnd } from "./api.js";
 import { deleteImage } from "./remove.js";
 const modalContainer = document.querySelector(".modal-container");
 const modalTriggers = document.querySelectorAll(".modal-trigger");
+const addPictureButton = document.querySelector(".AddPicture");
+const modalAjout = document.querySelector(".modal-ajout");
+const closeModalButton = document.querySelector(".close-modal");
+const ArrowBack = document.querySelector(".fa-arrow-left");
+
+addPictureButton.addEventListener("click", () => {
+  modalAjout.classList.toggle("active");
+});
+
+ArrowBack.addEventListener("click", () => {
+  modalAjout.classList.remove("active");
+});
 
 modalTriggers.forEach((trigger) =>
   trigger.addEventListener("click", toggleModal)
@@ -10,9 +22,9 @@ modalTriggers.forEach((trigger) =>
 
 function toggleModal() {
   modalContainer.classList.toggle("active");
+  modalAjout.classList.remove("active");
 }
 
-const closeModalButton = document.querySelector(".close-modal");
 closeModalButton.addEventListener("click", toggleModal);
 
 fetch(apiEnd("/works"))

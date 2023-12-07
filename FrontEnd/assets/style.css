@@ -365,7 +365,6 @@ footer nav ul {
   top: 0;
   width: 100vw;
   height: 100vh;
-  transition: visibility 0.4s;
 }
 
 .modal-container.active {
@@ -389,7 +388,6 @@ footer nav ul {
   flex-direction: column;
   display: flex;
   align-items: center;
-  opacity: 0;
   width: 95%;
   max-width: 500px;
   min-width: 300px;
@@ -404,9 +402,28 @@ footer nav ul {
 }
 
 .modal-ajout {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+
+  width: 95%;
+  max-width: 500px;
+  min-width: 300px;
+  background: white;
+  border-radius: 5px;
+  position: absolute;
+  padding: 30px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-ajout.active {
+  align-items: center;
+  display: flex;
 }
 
 .modal-container.active .modal {
+  visibility: visible;
   opacity: 1;
   transition: opacity 0.4s 0.2s ease-out;
 }
@@ -430,6 +447,17 @@ footer nav ul {
   align-items: center;
 }
 
+.labelModal {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border: none;
+  height: 50px;
+  width: 400px;
+}
+
+.label {
+  margin: 10px 0 20px 0;
+}
+
 .AddPicture {
   border-radius: 20px;
   margin: 20px 5px;
@@ -439,6 +467,29 @@ footer nav ul {
   border: none;
   color: white;
   width: 40%;
+}
+
+.uploadPicture {
+  border-radius: 20px;
+  margin: 20px 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #cbd6dc;
+  border: none;
+  color: #306685;
+  width: 40%;
+}
+
+.AddPictureValidation {
+  border-radius: 20px;
+  margin: 20px 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #a7a7a7;
+  border: none;
+  color: white;
+  width: 40%;
+  cursor: pointer;
 }
 
 /*Css dynamique*/
@@ -493,11 +544,40 @@ i {
 }
 
 .LigneModal {
-  border: none;
+  margin: 35px 0 0 0;
+
   color: #b3b3b3;
   width: 420px;
   height: 0px;
   border: 1px solid #b3b3b3;
+}
+
+.inputPicture {
+  padding: 20px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  background-color: #e8f1f6;
+}
+
+.fa-regular.fa-image {
+  color: #cbd6dc;
+  font-size: 100px;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
 }
 
 .fa-trash-can {
