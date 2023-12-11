@@ -32,17 +32,17 @@ document.getElementById("allBtn").addEventListener("click", function () {
 });
 
 document.getElementById("objetsBtn").addEventListener("click", function () {
-  clickbutton(this, "Objets");
+  clickbutton(this, "1");
 });
 
 document
   .getElementById("appartementsBtn")
   .addEventListener("click", function () {
-    clickbutton(this, "Appartements");
+    clickbutton(this, "2");
   });
 
 document
   .getElementById("hotelsRestaurantsBtn")
   .addEventListener("click", function () {
-    clickbutton(this, "Hotels & restaurants");
+    clickbutton(this, "3");
   });

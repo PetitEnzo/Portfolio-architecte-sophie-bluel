@@ -51,28 +51,42 @@
       </div>
 
       <div class="modal-ajout">
-        <i class="fa-solid fa-arrow-left"></i>
-        <button class="close-modal modal-trigger">X</button>
-        <h2>Ajout photo</h2>
-        <div class="inputPicture">
-          <i class="fa-regular fa-image"></i>
-          <button class="uploadPicture">+ Ajouter photo</button>
-          <br />
-          <p>Jpg, png : 4mo max</p>
-        </div>
-        <div class="Form">
-          <label for="title" class="label">Titre</label>
-          <input type="text" class="labelModal" id="title" name="title" />
-          <label for="Category" class="label">Catégorie</label>
-          <select class="labelModal">
-            <option disabled selected value=""></option>
-            <option value="Objets">Objets</option>
-            <option value="Appartements">Appartements</option>
-            <option value="Hotels & restaurants">Hotels & restaurants</option>
-          </select>
-        </div>
-        <hr class="LigneModal" />
-        <button class="AddPictureValidation">Valider</button>
+        <form action="" id="form-upload-picture">
+          <i class="fa-solid fa-arrow-left"></i>
+          <button class="close-modal modal-trigger">X</button>
+          <div class="centerModal"><h2>Ajout photo</h2></div>
+          <div class="inputPicture">
+            <i class="fa-regular fa-image"></i>
+            <label class="uploadPicture">
+              <input
+                type="file"
+                accept=".jpg,.png"
+                max-size="4000"
+                id="btnPicture"
+                class="btnPicture"
+                name="imageUrl"
+              />+ Ajouter photo
+            </label>
+
+            <br />
+            <p>Jpg, png : 4mo max</p>
+          </div>
+          <div class="Form">
+            <label for="title" class="label">Titre</label>
+            <input type="text" class="labelModal" id="title" name="title" />
+            <label for="Category" class="label">Catégorie</label>
+            <select class="labelModal" id="CategorieId">
+              <option disabled selected value=""></option>
+              <option value="1">Objets</option>
+              <option value="2">Appartements</option>
+              <option value="3">Hotels & restaurants</option>
+            </select>
+          </div>
+          <hr class="LigneModal" />
+          <div class="centerModal">
+            <button class="AddPictureValidation">Valider</button>
+          </div>
+        </form>
       </div>
     </div>
     <main>
@@ -137,7 +151,7 @@
     <script type="module" src="./userLog.js"></script>
     <script type="module" src="./projects.js"></script>
     <script type="module" src="./filter.js"></script>
-    <script type="module" src="./modal.js"></script>
+    <script type="module" src="./modal.js" defer></script>
     <script type="module" src="./remove.js"></script>
     <!--est ce la bonne méthode plutot qu'enlever module et rajouter defer ?-->
   </body>

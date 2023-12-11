@@ -395,7 +395,7 @@ footer nav ul {
   border-radius: 5px;
   position: absolute;
   padding: 30px;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: opacity 0.4s ease-out;
@@ -413,12 +413,11 @@ footer nav ul {
   border-radius: 5px;
   position: absolute;
   padding: 30px;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .modal-ajout.active {
-  align-items: center;
   display: flex;
 }
 
@@ -426,6 +425,10 @@ footer nav ul {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.4s 0.2s ease-out;
+}
+
+.centerModal {
+  text-align: center;
 }
 
 .close-modal {
@@ -477,7 +480,7 @@ footer nav ul {
   background-color: #cbd6dc;
   border: none;
   color: #306685;
-  width: 40%;
+  width: 27%;
 }
 
 .AddPictureValidation {
@@ -489,6 +492,10 @@ footer nav ul {
   border: none;
   color: white;
   width: 40%;
+  cursor: not-allowed;
+}
+.AddPictureValidation.active {
+  background-color: #1d6154;
   cursor: pointer;
 }
 
@@ -532,6 +539,11 @@ i {
   height: auto;
 }
 
+.preview-image {
+  width: 129px;
+  height: 193px;
+}
+
 .imageModale {
   width: 78px;
   height: auto;
@@ -557,8 +569,12 @@ i {
   flex-direction: column;
   display: flex;
   align-items: center;
-  width: 80%;
+  width: 87%;
   background-color: #e8f1f6;
+}
+
+.btnPicture {
+  display: none;
 }
 
 .fa-regular.fa-image {
