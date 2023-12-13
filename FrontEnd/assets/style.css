@@ -378,6 +378,7 @@ footer nav ul {
   height: 100%;
   background: #333333d3;
   transition: opacity 0.4s 0.2s ease-out;
+  max-width: 1140px;
 }
 .modal-container.active .overlay {
   opacity: 1;
@@ -396,7 +397,7 @@ footer nav ul {
   position: absolute;
   padding: 30px;
   top: 45%;
-  left: 50%;
+  left: 20%;
   transform: translate(-50%, -50%);
   transition: opacity 0.4s ease-out;
 }
@@ -414,7 +415,7 @@ footer nav ul {
   position: absolute;
   padding: 30px;
   top: 45%;
-  left: 50%;
+  left: 20%;
   transform: translate(-50%, -50%);
 }
 .modal-ajout.active {
