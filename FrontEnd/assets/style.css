@@ -565,13 +565,18 @@ i {
   border: 1px solid #b3b3b3;
 }
 
-.inputPicture {
+.inputPicture,
+.previewImageContainer {
   padding: 20px;
   flex-direction: column;
   display: flex;
   align-items: center;
   width: 87%;
   background-color: #e8f1f6;
+}
+
+.hidden {
+  display: none;
 }
 
 .btnPicture {

@@ -57,6 +57,7 @@
           <p class="close-modal modal-trigger">X</p>
           <!--changement du bouton en <p> pour eviter que le bouton de fermeture fonctionne comme le formulaire-->
           <div class="centerModal"><h2>Ajout photo</h2></div>
+          <div class="previewImageContainer"></div>
           <div class="inputPicture">
             <i class="fa-regular fa-image"></i>
             <label class="uploadPicture">
@@ -79,9 +80,6 @@
             <label for="Category" class="label">Catégorie</label>
             <select class="labelModal" id="CategorieId">
               <option disabled selected value=""></option>
-              <option value="1">Objets</option>
-              <option value="2">Appartements</option>
-              <option value="3">Hotels & restaurants</option>
             </select>
           </div>
           <hr class="LigneModal" />
@@ -119,11 +117,8 @@
         <h2>Mes Projets</h2>
       </div>
 
-      <div id="filter-buttons">
+      <div id="filter-buttons" class="filter-buttons">
         <button id="allBtn">Tous</button>
-        <button id="objetsBtn">Objets</button>
-        <button id="appartementsBtn">Appartements</button>
-        <button id="hotelsRestaurantsBtn">Hotels & restaurants</button>
       </div>
       <section id="portfolio"></section>
       <section id="contact">
@@ -153,7 +148,7 @@
     <script type="module" src="./userLog.js"></script>
     <script type="module" src="./projects.js"></script>
     <script type="module" src="./filter.js"></script>
-    <script type="module" src="./modal.js" defer></script>
+    <script type="module" src="./modal.js"></script>
     <script type="module" src="./remove.js"></script>
     <!--est ce la bonne méthode plutot qu'enlever module et rajouter defer ?-->
   </body>
