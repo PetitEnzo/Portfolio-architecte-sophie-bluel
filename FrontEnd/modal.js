@@ -2,6 +2,9 @@
 import { apiUrl, apiEnd } from "./api.js";
 import { newProject } from "./projects.js";
 import { deleteImage } from "./remove.js";
+import { createCategoryModal } from "./filter.js";
+
+createCategoryModal();
 
 const modalContainer = document.querySelector(".modal-container");
 const modalTriggers = document.querySelectorAll(".modal-trigger");
@@ -87,7 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
   updateSubmitButtonAppearance();
 
   btnPicture.addEventListener("change", (e) => {
-    console.log("change");
     const previewContainer = document.querySelector(".previewImageContainer");
     const existingPreviewImage =
       previewContainer.querySelector(".preview-image");
@@ -162,7 +164,6 @@ function isFormValid() {
 }
 // Fonction pour mettre à jour l'apparence du bouton en fonction de la validité du formulaire
 function updateSubmitButtonAppearance() {
-  console.log(isFormValid());
   if (isFormValid()) {
     submitButton.classList.add("active");
   } else {

@@ -27,7 +27,7 @@ export async function createButtonFilter() {
 }
 
 export async function createCategoryModal() {
-  const FilterModal = document.querySelector(".LabelModal");
+  const FilterModal = document.getElementById("CategorieId");
   const categories = await fetchCategory();
   categories.forEach((categorie) => {
     const option = document.createElement("option");
