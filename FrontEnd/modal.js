@@ -2,9 +2,6 @@
 import { apiUrl, apiEnd } from "./api.js";
 import { newProject } from "./projects.js";
 import { deleteImage } from "./remove.js";
-import { createCategoryModal } from "./filter.js";
-
-createCategoryModal();
 
 const modalContainer = document.querySelector(".modal-container");
 const modalTriggers = document.querySelectorAll(".modal-trigger");
@@ -29,12 +26,18 @@ modalTriggers.forEach((trigger) =>
 
 function toggleModal() {
   modalContainer.classList.toggle("active");
+  modal.classList.toggle("active");
   modalAjout.classList.remove("active");
+  resetModal();
+}
+
+function closeModal() {
   modal.classList.remove("active");
   resetModal();
 }
+
 closeModalButton.addEventListener("click", () => {
-  toggleModal();
+  closeModal();
 });
 
 function GalleryModal(projet) {
