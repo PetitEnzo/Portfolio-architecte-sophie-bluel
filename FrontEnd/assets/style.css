@@ -396,9 +396,9 @@ footer nav ul {
   border-radius: 5px;
   position: absolute;
   padding: 30px;
-  top: 45%;
-  left: 23%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
   transition: opacity 0.4s ease-out;
 }
 .modal.active {
@@ -417,9 +417,9 @@ footer nav ul {
   border-radius: 5px;
   position: absolute;
   padding: 30px;
-  top: 45%;
-  left: 23%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
 }
 .modal-ajout.active {
   display: flex;
@@ -477,14 +477,16 @@ footer nav ul {
 }
 
 .uploadPicture {
+  display: flex;
+  justify-content: center;
   border-radius: 20px;
   margin: 20px 5px;
-  padding: 10px 20px;
+  padding: 10px 35px;
   cursor: pointer;
   background-color: #cbd6dc;
   border: none;
   color: #306685;
-  width: 27%;
+  width: 173px;
 }
 
 .AddPictureValidation {
@@ -606,13 +608,17 @@ i {
 }
 
 .fa-trash-can {
-  top: -102px;
+  top: 4px;
   left: 55px;
   background-color: black;
   border-radius: 10%;
   padding: 4px;
-  position: relative;
+  position: absolute;
   cursor: pointer;
+}
+
+.imageContainer {
+  position: relative;
 }
 
 .gallery {
@@ -651,4 +657,16 @@ i {
   background-color: #1d6154;
   border: none;
   color: white;
+}
+
+@media (max-width: 2561px) and (min-width: 1140px) {
+  .modal {
+    left: 22%;
+    transform: translate(-50%);
+    transition: opacity 0.4s ease-out;
+  }
+  .modal-ajout {
+    left: 22%;
+    transform: translate(-50%);
+  }
 }

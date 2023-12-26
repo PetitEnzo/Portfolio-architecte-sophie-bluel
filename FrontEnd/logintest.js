@@ -5,6 +5,7 @@ const form = document.getElementById("loginForm");
 function submitform() {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
+  const Error = document.getElementById("Error");
   fetch(apiEnd("/users/login"), {
     method: "POST",
     headers: {
@@ -22,9 +23,7 @@ function submitform() {
         window.location.href = "index.html";
         console.log(localStorage);
       } else {
-        const errorMessage = document.createElement("p");
-        errorMessage.textContent = "Identifiants incorrects.";
-        loginForm.appendChild(errorMessage);
+        Error.classList.remove("hidden");
       }
     });
 }
